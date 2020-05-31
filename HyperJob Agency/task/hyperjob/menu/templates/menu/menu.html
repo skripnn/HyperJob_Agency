@@ -1,0 +1,11 @@
+{% extends 'menu/base.html' %}
+{#{% block title %}{% endblock %}#}
+
+{% block content %}
+    <h2>Welcome to HyperJob!</h2>
+    <nav>
+    {% for name, link in menu_links.items %}
+        <p><a target="_blank" href="{{ link }}">{{ name }}</a></p>
+    {% endfor %}
+    </nav>
+{% endblock %}
