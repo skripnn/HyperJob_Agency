@@ -24,6 +24,9 @@ urlpatterns = [
     path('login', MyLoginView.as_view()),
     path('logout', LogoutView.as_view()),
     path('signup', MySignupView.as_view()),
+    path('resume/', include('resume.urls')),
+    path('vacancy/', include('vacancy.urls')),
     path('resumes/', include('resume.urls')),
-    path('vacancies/', include('vacancy.urls'))
+    path('vacancies/', include('vacancy.urls')),
+    path('home/', Home.as_view())
 ]
